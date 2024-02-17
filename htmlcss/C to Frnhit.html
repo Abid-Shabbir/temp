@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let convert = () =>{
+            var C = document.getElementById('data').value;
+            var F = (C*1.8)+32;
+            document.getElementById('rslt').innerText = `${C}C = ${F} F`
+        }
+        let check = ()=>{
+            var value = document.getElementById('data').value;
+            // var rslt = Math.sign(value);
+            // alert(rslt)
+           if(value >0){
+             rslt = `${value}:is positive number`
+           }
+           else if (value < 0){
+            rslt = `${value}:is negative number`
+           }
+           else if (value == 0){
+            rslt=`${value}:zero`
+           }
+           else{
+            rslt='NAN';
+           }
+          document.getElementById('rslt').innerText=rslt;
+         }
+    </script>
+</head>
+<style>
+        .checkbox{
+            text-align: center;
+            align-items: center;
+            background-color: rgb(178, 252, 227);
+        }
+</style>
+<body>
+    
+        <input type="number" id="data" step="any">C
+        <button id="btn" onclick="convert()">Convert</button>F
+        <h1 id="rslt" style="text-align: center;">Answer is here!</h1> -->
+        <br><br><br>
+
+         <div class="checkbox">
+        <input type="" id="data" step="any">value
+        <button id="check" onclick="check()">Check</button>
+        <h1 id="rslt" style="text-align: center;">Answer is here!</h1>
+       </div> 
+        
+</body>
+</html>
