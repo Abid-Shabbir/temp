@@ -74,3 +74,4 @@ var onRejection = (error)=>{
 }
 
 prom(9,3).then(onfulfillment).catch(onRejection);//here here called a prom function
+//the function the creat is the open condition the it return the basic value that t

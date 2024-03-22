@@ -21,10 +21,14 @@ buttons.forEach(element =>{
             string = String(-eval(string))
             inputbox.value = string;
         }
+        else if (b.target.id == 'modles'){//this mechanisim has been used to manipulate the
+            //associate computing of modles and multiplication
+            string = String(-eval(string))
+            inputbox.value = string;
+        }
         else{
             string += b.target.innerText
-            inputbox.value = string
-
+            inputbox.value = string;
         }
     })
 }) 

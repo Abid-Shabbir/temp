@@ -40,3 +40,9 @@ srchbtn.addEventListener("click", () => {
 })
 
 
+var searchbox = document.querySelector("#sarchbox")
+searchbox.addEventListener("abc",functon(
+    backgroud = "lignt-green"
+))
+
+
